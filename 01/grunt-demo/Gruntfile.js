@@ -1,3 +1,6 @@
+/**
+ * create by Terry on 16/7/24.
+ */
 module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),//读取配置文件
