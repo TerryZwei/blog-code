@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["$","a","b","console","log"],"mappings":"AAAAA,EAAE,WACE,GAAIC,GAAI,EACJC,EAAI,CACRC,SAAQC,IAAIH,EAAEC,GACdC,QAAQC,IAAI","file":"index.js","sourcesContent":["$(function(){\n    var a = 1;\n    var b = 3;\n    console.log(a+b);  \n    console.log('index.js'); \n});"],"sourceRoot":"/source/"}

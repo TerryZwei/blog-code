@@ -1,0 +1,1 @@
+{"version":3,"sources":["page/test.js"],"names":["$","console","log"],"mappings":"AAAAA,EAAE,WACEC,QAAQC,IAAI","file":"page/test.js","sourcesContent":["$(function(){\n    console.log('test.js');\n});"],"sourceRoot":"/source/"}
