@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue js</title>
+    </head>
+    <body>
+        <div id="app">
+            
+        </div>
+    </body>
+    <script src="vue.js"></script>
+    <script>
+        var myComponent = Vue.extend({
+            template: '<div>Vue实例</div>'
+        });
+        var myComponentInstance = new myComponent();
+
+        console.log(myComponentInstance);
+        //把myComponentInstance挂载在app上
+        myComponentInstance.$mount('#app');
+        // new Vue({
+        //     el: '#app',
+        //     data: {
+        //         message: 'hello world'
+        //     }
+        // });
+    </script>
+</html>

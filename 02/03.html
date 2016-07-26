@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue js</title>
+    </head>
+    <body>
+        <div id="app">
+            <app-nav></app-nav>
+            <app-view></app-view>
+        </div>
+    </body>
+    <script src="vue.js"></script>
+    <script>
+        //定义
+        var appNav = Vue.extend({
+            template: '<div>appNav</div>'
+        });
+
+        var appView = Vue.extend({
+            template: '<app-siderbar></app-siderbar><app-content></app-content>'
+        });
+
+        var appSiderBar = Vue.extend({
+            template: '<div>appSider</div>'
+        });
+
+        var appContent = Vue.extend({
+            template: '<div>appContent</div>'
+        });
+
+        //注册
+        Vue.component('app-nav',appNav);
+        Vue.component('app-view', appView);
+        Vue.component('app-siderbar', appSiderBar);
+        Vue.component('app-content', appContent);
+        //创建根实例
+        new Vue({
+            el: '#app'
+        });
+    </script>
+</html>
